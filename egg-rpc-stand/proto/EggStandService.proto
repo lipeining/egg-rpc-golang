@@ -1,0 +1,18 @@
+
+syntax = "proto3";
+
+package com.localhost.egg.rpc.stand;
+
+service EggStandService {
+    rpc multi (MultiRequest) returns (MultiResponse) {}
+}
+
+message MultiRequest {
+    int32 left = 1;
+    int32 right = 2;
+}
+
+message MultiResponse {
+    int32 code = 1;
+    string message = 2;
+}
