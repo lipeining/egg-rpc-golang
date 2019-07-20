@@ -1,0 +1,18 @@
+
+syntax = "proto3";
+
+package com.localhost.g.rpc.demo;
+
+service GDemoService {
+    rpc sum (SumRequest) returns (SumResponse) {}
+}
+
+message SumRequest {
+    int32 left = 1;
+    int32 right = 2;
+}
+
+message SumResponse {
+    int32 code = 1;
+    string message = 2;
+}
