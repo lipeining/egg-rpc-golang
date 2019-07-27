@@ -14,7 +14,7 @@ const registry = new ZookeeperRegistry({
 const server = new RpcServer({
     logger,
     registry, // 传入注册中心客户端
-    port: 12200,
+    port: 12222,
 });
 
 // 3. 添加服务

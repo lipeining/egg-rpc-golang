@@ -22,6 +22,11 @@ module.exports = appInfo => {
     const userConfig = {
         // myAppName: 'egg',
     };
+    config.zookeeper = {
+        url: 'localhost:2181',
+        host: 'localhost',
+        port: 2181,
+    };
     config.cluster = {
         listen: {
             port: 7001,

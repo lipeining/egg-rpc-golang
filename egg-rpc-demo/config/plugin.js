@@ -10,4 +10,8 @@ module.exports = {
         enable: true,
         package: 'egg-rpc-base',
     },
+    zookeeper: {
+        enable: true,
+        package: 'egg-zookeeper',
+    },
 };
